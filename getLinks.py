@@ -25,7 +25,10 @@ def getLinks(page):
     for i, p in enumerate(html.xpath("//tr/td[@class='subtext']/a")):
         if "comment" in p.text:
             comments = p.text.split()[0]
-            links[on - 1].append(comments)
+            try:
+                links[on - 1].append(comments)
+            except:
+                pass
         if i % 3 == 0:
             on += 1
     if not links:
