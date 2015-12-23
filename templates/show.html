@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %} HN Live - Show{% endblock %}
+{% block body %}
+    <div id="live">
+        Fetching data...                                                                                                                                                                             
+    </div>
+    <script>
+function update() { $("#live").load("/get_links/show"); } setInterval(update, 10000);update();
+    </script>
+{% endblock %}

@@ -1,0 +1,18 @@
+<table>
+    <tr>
+        <td></td>
+        <td>points</td>
+        <td>comments</td>
+    </tr>
+{% for link in links %}
+<tr>
+    <td>
+<a target="_blank" href="{% if 'item?id' in link[0] %} https://news.ycombinator.com/{{link[0]}} {% else %}{{link[0]}}{% endif %}">{{ link[1] | replace("â", '-') | replace("Ã©", "é")}}</a>
+</td>
+<td id="points">{{link[2]}}</td>
+<td>{{ link[3] }}</td>
+    </tr>
+
+{% endfor %}
+</table>
+

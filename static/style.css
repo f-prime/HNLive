@@ -1,0 +1,65 @@
+html {
+
+    font-family: sans-serif;
+    color: rgb(50, 50, 50);
+}
+
+.title {
+
+    font-size: 23px;
+
+
+}
+
+.subtitle {
+
+
+}
+
+.subtitle a {
+
+    color: #f60;
+
+}
+
+#live a {
+
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+
+}
+
+#live a:hover {
+
+    color: #f60;
+
+}
+
+#links {
+
+
+    padding: 50px;
+     
+}
+
+#links a {
+
+    margin-left: 10px;
+    color: #F60;
+}
+
+
+td {
+
+    padding-left: 170px;
+    padding-bottom: 25px;
+
+}
+
+
+#points {
+
+    color: #f60;
+
+}
+
