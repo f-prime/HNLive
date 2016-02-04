@@ -1,6 +1,5 @@
 import lxml.html
 import urllib
-import utils
 import pymongo
 import time
 import sys
