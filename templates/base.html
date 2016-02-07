@@ -32,4 +32,7 @@
         {% block body %}
         {% endblock %}
     </body>
+    <script>
+      function update(link) { $("#live").load("/get_links/"+link); }
+    </script>
 </html>

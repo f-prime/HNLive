@@ -2,9 +2,9 @@
 {% block title %} HN Live - Hot{% endblock %}
 {% block body %}
     <div id="live">
-        Fetching data...                                                                                                                                                                             
+        Fetching data...
     </div>
     <script>
-function update() { $("#live").load("/get_links/hot"); } setInterval(update, 10000);update();
+    setInterval(update, 10000);update(hot);
     </script>
 {% endblock %}
