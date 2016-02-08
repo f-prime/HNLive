@@ -12,7 +12,10 @@ db = pymongo.MongoClient("localhost", 27017).hnlive
 def getLinks(page):
     
     url = "https://news.ycombinator.com/{}".format(page)
-    html = lxml.html.fromstring(urllib.urlopen(url).read())
+    try:
+        html = lxml.html.fromstring(urllib.urlopen(url).read())
+    except:
+        return []
     links = []
     for x in html.xpath("//tr[@class='athing']/td[@class='title']/a"):
         link, text = x.attrib['href'], unicode(x.text)
